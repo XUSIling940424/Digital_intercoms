@@ -44,7 +44,7 @@ int main(void)
 			rt_kprintf("rt_thread_create is faile\n");
 			return -1;	
 		}	
-#if 1		
+#if 0		
     while (1)
     {
 			  /*°´¼ü1¼ì²â*/
