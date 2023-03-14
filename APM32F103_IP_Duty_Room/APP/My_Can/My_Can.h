@@ -45,7 +45,7 @@
 struct Attribute_t{
   unsigned char state;   //状态
 	unsigned char addr;    //地址
-	
+	/*在线状态*/
 	unsigned char com_line;   //机房在线标志
 	unsigned char com_line_temp;   //机房在线计数
 	unsigned char dut_line;   //值班室在线标志
@@ -55,7 +55,18 @@ struct Attribute_t{
 	unsigned char lif_line;   //轿厢在线标志
 	unsigned char lif_line_temp;   //轿厢在线计数	
 	unsigned char pit_line;   //底坑在线标志
-	unsigned char pit_line_temp;   //底坑在线计数			
+	unsigned char pit_line_temp;   //底坑在线计数
+  /*通话状态*/
+	unsigned char com_talk;   //机房通话标志
+	unsigned char com_talk_temp;   //机房通话计数
+	unsigned char dut_talk;   //值班室通话标志
+	unsigned char dut_talk_temp;   //值班室通话计数
+	unsigned char car_talk;   //轿顶通话标志
+	unsigned char car_talk_temp;   //轿顶通话计数
+	unsigned char lif_talk;   //轿厢通话标志
+	unsigned char lif_talk_temp;   //轿厢通话计数	
+	unsigned char pit_talk;   //底坑通话标志
+	unsigned char pit_talk_temp;   //底坑通话计数  	
 };
 
 extern struct Attribute_t  My_Attribute;

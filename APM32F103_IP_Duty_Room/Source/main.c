@@ -143,7 +143,6 @@ static void msg_thread_entry(void *paramter)
 	int   i=0;
 	int 	ret=0;
 	
-//  start_voice_play();
   /*ÒôÁ¿µ÷½Ú*/
 	CAN_EnableInterrupt(CAN1, CAN_INT_F0MP );  		
 	NVIC_EnableIRQRequest(USBD1_LP_CAN1_RX0_IRQn, 0, 1);
