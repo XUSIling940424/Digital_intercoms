@@ -57,15 +57,20 @@ struct Attribute_t{
 	unsigned char pit_line;   //底坑在线标志
 	unsigned char pit_line_temp;   //底坑在线计数
   /*通话状态*/
-	unsigned char com_talk;   //机房通话标志
+	unsigned char com_talk;   		//机房通话标志
+	unsigned char com_talk_old;   //机房通话标志
 	unsigned char com_talk_temp;   //机房通话计数
 	unsigned char dut_talk;   //值班室通话标志
+	unsigned char dut_talk_old;   //值班室通话标志
 	unsigned char dut_talk_temp;   //值班室通话计数
 	unsigned char car_talk;   //轿顶通话标志
+	unsigned char car_talk_old;   //轿顶通话标志
 	unsigned char car_talk_temp;   //轿顶通话计数
 	unsigned char lif_talk;   //轿厢通话标志
+	unsigned char lif_talk_old;   //轿厢通话标志
 	unsigned char lif_talk_temp;   //轿厢通话计数	
 	unsigned char pit_talk;   //底坑通话标志
+	unsigned char pit_talk_old;   //底坑通话标志
 	unsigned char pit_talk_temp;   //底坑通话计数  	
 };
 

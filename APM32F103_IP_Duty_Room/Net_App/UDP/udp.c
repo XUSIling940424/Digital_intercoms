@@ -51,8 +51,7 @@ void do_udp(void)
 					A_RX_buff[lens-8]=0;
 						rt_memset(udp_7777_recv_buff[A_RX_buff[0]].msg_buff[udp_7777_recv_buff[A_RX_buff[0]].msg_input],0,121);
 						rt_memcpy(udp_7777_recv_buff[A_RX_buff[0]].msg_buff[udp_7777_recv_buff[A_RX_buff[0]].msg_input],&A_RX_buff[1],120);
-						udp_7777_recv_buff[A_RX_buff[0]].msg_input=((udp_7777_recv_buff[A_RX_buff[0]].msg_input+1)%(MAX_NET_MSG_NUM));
-            						
+						udp_7777_recv_buff[A_RX_buff[0]].msg_input=((udp_7777_recv_buff[A_RX_buff[0]].msg_input+1)%(MAX_NET_MSG_NUM));           						
 					}else {
 					  lens=0;
 					}						

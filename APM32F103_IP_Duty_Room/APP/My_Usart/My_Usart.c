@@ -139,29 +139,54 @@ static void Usart_Recv_thread_entry(void *parameter)
 				;
 			}
       /*将网络接收到的数据播放*/
-      if(udp_7777_recv_buff[0].msg_input!=udp_7777_recv_buff[0].msg_output){ 
+      if(udp_7777_recv_buff[0].msg_input!=udp_7777_recv_buff[0].msg_output){ //第一路，机房语音
 				usart2_dma_send(udp_7777_recv_buff[0].msg_buff[udp_7777_recv_buff[0].msg_output],120);
 				udp_7777_recv_buff[0].msg_input=((udp_7777_recv_buff[0].msg_input+1)%(MAX_NET_MSG_NUM));
-//				rt_kprintf("1\n");
+				if(My_Attribute.com_talk==0){
+				   My_Attribute.com_talk=1;  
+				}else{
+				   My_Attribute.com_talk_temp=1;
+				}
+//        rt_kprintf("1\n");				
 			}	
-      if(udp_7777_recv_buff[1].msg_input!=udp_7777_recv_buff[1].msg_output){
+      if(udp_7777_recv_buff[1].msg_input!=udp_7777_recv_buff[1].msg_output){ //第二路，轿厢语音
 				usart2_dma_send(udp_7777_recv_buff[1].msg_buff[udp_7777_recv_buff[1].msg_output],120);
 				udp_7777_recv_buff[1].msg_input=((udp_7777_recv_buff[1].msg_input+1)%(MAX_NET_MSG_NUM));
+				if(My_Attribute.lif_talk==0){
+				   My_Attribute.lif_talk=1;  
+				}else{
+				   My_Attribute.lif_talk_temp=1;
+				}				
 //        rt_kprintf("2\n");			  
 			}
-      if(udp_7777_recv_buff[2].msg_input!=udp_7777_recv_buff[2].msg_output){
+      if(udp_7777_recv_buff[2].msg_input!=udp_7777_recv_buff[2].msg_output){ //第三路，底坑语音
 				usart2_dma_send(udp_7777_recv_buff[2].msg_buff[udp_7777_recv_buff[2].msg_output],120);
 				udp_7777_recv_buff[2].msg_input=((udp_7777_recv_buff[2].msg_input+1)%(MAX_NET_MSG_NUM));
+				if(My_Attribute.pit_talk==0){
+				   My_Attribute.pit_talk=1;  
+				}else{
+				   My_Attribute.pit_talk_temp=1;
+				}					
 //        rt_kprintf("3\n");			  
 			}
-      if(udp_7777_recv_buff[3].msg_input!=udp_7777_recv_buff[3].msg_output){
+      if(udp_7777_recv_buff[3].msg_input!=udp_7777_recv_buff[3].msg_output){ //第四路，轿顶语音
 				usart2_dma_send(udp_7777_recv_buff[3].msg_buff[udp_7777_recv_buff[3].msg_output],120);
 				udp_7777_recv_buff[3].msg_input=((udp_7777_recv_buff[3].msg_input+1)%(MAX_NET_MSG_NUM));
+				if(My_Attribute.car_talk==0){
+				   My_Attribute.car_talk=1;  
+				}else{
+				   My_Attribute.car_talk_temp=1;
+				}					
 //        rt_kprintf("4\n");				
 			}
-      if(udp_7777_recv_buff[4].msg_input!=udp_7777_recv_buff[4].msg_output){
+      if(udp_7777_recv_buff[4].msg_input!=udp_7777_recv_buff[4].msg_output){  //第五路，值班室语音
 				usart2_dma_send(udp_7777_recv_buff[4].msg_buff[udp_7777_recv_buff[4].msg_output],120);
 				udp_7777_recv_buff[4].msg_input=((udp_7777_recv_buff[4].msg_input+1)%(MAX_NET_MSG_NUM));
+				if(My_Attribute.dut_talk==0){
+				   My_Attribute.dut_talk=1;  
+				}else{
+				   My_Attribute.dut_talk_temp=1;
+				}					
 //        rt_kprintf("5\n");			  
 			}			
 		}
@@ -270,7 +295,7 @@ void usart3_send_Data(unsigned char*buf,unsigned char len )
 {
 	unsigned char t=0;
 	
-//	rt_mutex_take(usart2_send_mutex,RT_WAITING_FOREVER);   //试图持有锁，没有一直等待
+//	rt_mutex_take(usart3_send_mutex,RT_WAITING_FOREVER);   //试图持有锁，没有一直等待
 	
 	for(t=0;t<len;t++)
 	{
@@ -278,7 +303,7 @@ void usart3_send_Data(unsigned char*buf,unsigned char len )
 		USART_TxData(USART3,buf[t]);			
 	}
 	while(USART_ReadStatusFlag(USART3, USART_FLAG_TXC) == RESET);
-//	rt_mutex_release(usart2_send_mutex);		  //释放锁
+//	rt_mutex_release(usart3_send_mutex);		  //释放锁
 }
 
 /*串口三dma发送函数*/
