@@ -3275,21 +3275,21 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000144   Data   RO           71    RESET               startup_apm32f10x_hd.o
-    0x08000144   0x08000144   0x00000000   Code   RO         7394  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000144   0x08000144   0x00000004   Code   RO         7674    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000148   0x08000148   0x00000004   Code   RO         7677    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x0800014c   0x0800014c   0x00000000   Code   RO         7679    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x0800014c   0x0800014c   0x00000000   Code   RO         7681    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x0800014c   0x0800014c   0x00000008   Code   RO         7682    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000154   0x08000154   0x00000000   Code   RO         7684    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000154   0x08000154   0x00000000   Code   RO         7686    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000154   0x08000154   0x00000004   Code   RO         7675    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000144   0x08000144   0x00000000   Code   RO         7499  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000144   0x08000144   0x00000004   Code   RO         7779    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000148   0x08000148   0x00000004   Code   RO         7782    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO         7784    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO         7786    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0800014c   0x0800014c   0x00000008   Code   RO         7787    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000154   0x08000154   0x00000000   Code   RO         7789    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000154   0x08000154   0x00000000   Code   RO         7791    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000154   0x08000154   0x00000004   Code   RO         7780    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000158   0x08000158   0x00000024   Code   RO           72    .text               startup_apm32f10x_hd.o
-    0x0800017c   0x0800017c   0x000000f4   Code   RO         6235    .text               context_rvds.o
-    0x08000270   0x08000270   0x00000024   Code   RO         7397    .text               mc_w.l(memseta.o)
-    0x08000294   0x08000294   0x00000024   Code   RO         7704    .text               mc_w.l(init.o)
-    0x080002b8   0x080002b8   0x00000056   Code   RO         7722    .text               mc_w.l(__dczerorl2.o)
-    0x0800030e   0x0800030e   0x0000000a   Code   RO         6319    i.$Sub$$main        components.o
+    0x0800017c   0x0800017c   0x000000f4   Code   RO         6340    .text               context_rvds.o
+    0x08000270   0x08000270   0x00000024   Code   RO         7502    .text               mc_w.l(memseta.o)
+    0x08000294   0x08000294   0x00000024   Code   RO         7809    .text               mc_w.l(init.o)
+    0x080002b8   0x080002b8   0x00000056   Code   RO         7827    .text               mc_w.l(__dczerorl2.o)
+    0x0800030e   0x0800030e   0x0000000a   Code   RO         6424    i.$Sub$$main        components.o
     0x08000318   0x08000318   0x00000004   Code   RO         4816    i.BusFault_Handler  apm32f10x_int.o
     0x0800031c   0x0800031c   0x0000010c   Code   RO          501    i.CAN_ClearIntFlag  apm32f10x_can.o
     0x08000428   0x08000428   0x00000126   Code   RO          503    i.CAN_Config        apm32f10x_can.o
@@ -3303,7 +3303,7 @@ Memory Map of the image
     0x080008a0   0x080008a0   0x00000126   Code   RO          521    i.CAN_TxMessage     apm32f10x_can.o
     0x080009c6   0x080009c6   0x00000002   PAD
     0x080009c8   0x080009c8   0x000000e4   Code   RO         4946    i.Can1_Init         can.o
-    0x08000aac   0x08000aac   0x00000154   Code   RO         6171    i.Client_HandData   my_netapp.o
+    0x08000aac   0x08000aac   0x00000154   Code   RO         6276    i.Client_HandData   my_netapp.o
     0x08000c00   0x08000c00   0x00000012   Code   RO         4994    i.DMA1_Channel2_IRQHandler  usart.o
     0x08000c12   0x08000c12   0x00000002   PAD
     0x08000c14   0x08000c14   0x000000a0   Code   RO         4995    i.DMA1_Channel7_IRQHandler  usart.o
@@ -3326,15 +3326,15 @@ Memory Map of the image
     0x08000fb6   0x08000fb6   0x00000004   Code   RO         1440    i.GPIO_ResetBit     apm32f10x_gpio.o
     0x08000fba   0x08000fba   0x00000004   Code   RO         1441    i.GPIO_SetBit       apm32f10x_gpio.o
     0x08000fbe   0x08000fbe   0x0000000a   Code   RO         1442    i.GPIO_WriteBitValue  apm32f10x_gpio.o
-    0x08000fc8   0x08000fc8   0x00000032   Code   RO         5822    i.IINCHIP_READ      w5500_conf.o
-    0x08000ffa   0x08000ffa   0x0000000c   Code   RO         5823    i.IINCHIP_SpiSendData  w5500_conf.o
-    0x08001006   0x08001006   0x00000032   Code   RO         5824    i.IINCHIP_WRITE     w5500_conf.o
+    0x08000fc8   0x08000fc8   0x00000032   Code   RO         5927    i.IINCHIP_READ      w5500_conf.o
+    0x08000ffa   0x08000ffa   0x0000000c   Code   RO         5928    i.IINCHIP_SpiSendData  w5500_conf.o
+    0x08001006   0x08001006   0x00000032   Code   RO         5929    i.IINCHIP_WRITE     w5500_conf.o
     0x08001038   0x08001038   0x00000004   Code   RO         4818    i.MemManage_Handler  apm32f10x_int.o
     0x0800103c   0x0800103c   0x00000002   Code   RO         4819    i.NMI_Handler       apm32f10x_int.o
     0x0800103e   0x0800103e   0x00000002   PAD
     0x08001040   0x08001040   0x00000014   Code   RO         1921    i.NVIC_ConfigPriorityGroup  apm32f10x_misc.o
     0x08001054   0x08001054   0x000000a0   Code   RO         1924    i.NVIC_EnableIRQRequest  apm32f10x_misc.o
-    0x080010f4   0x080010f4   0x00000054   Code   RO         5602    i.PHY_check         w5500.o
+    0x080010f4   0x080010f4   0x00000054   Code   RO         5707    i.PHY_check         w5500.o
     0x08001148   0x08001148   0x00000010   Code   RO         2319    i.RCM_DisableAPB1PeriphReset  apm32f10x_rcm.o
     0x08001158   0x08001158   0x00000010   Code   RO         2329    i.RCM_EnableAHBPeriphClock  apm32f10x_rcm.o
     0x08001168   0x08001168   0x00000010   Code   RO         2330    i.RCM_EnableAPB1PeriphClock  apm32f10x_rcm.o
@@ -3355,13 +3355,13 @@ Memory Map of the image
     0x080013da   0x080013da   0x00000004   Code   RO         3466    i.SPI_I2S_TxData    apm32f10x_spi.o
     0x080013de   0x080013de   0x00000002   Code   RO         4820    i.SVC_Handler       apm32f10x_int.o
     0x080013e0   0x080013e0   0x00000064   Code   RO         5127    i.Spi1_Config       spi.o
-    0x08001444   0x08001444   0x00000008   Code   RO         7319    i.SysTick_Handler   board_1.o
+    0x08001444   0x08001444   0x00000008   Code   RO         7424    i.SysTick_Handler   board_1.o
     0x0800144c   0x0800144c   0x000000dc   Code   RO            4    i.SystemClock72M    system_apm32f10x.o
     0x08001528   0x08001528   0x00000008   Code   RO            5    i.SystemClockConfig  system_apm32f10x.o
     0x08001530   0x08001530   0x0000006c   Code   RO            6    i.SystemCoreClockUpdate  system_apm32f10x.o
     0x0800159c   0x0800159c   0x00000060   Code   RO            7    i.SystemInit        system_apm32f10x.o
     0x080015fc   0x080015fc   0x00000038   Code   RO         5090    i.TMR1_UP_IRQHandler  time.o
-    0x08001634   0x08001634   0x0000003c   Code   RO         5825    i.TMR2_IRQHandler   w5500_conf.o
+    0x08001634   0x08001634   0x0000003c   Code   RO         5930    i.TMR2_IRQHandler   w5500_conf.o
     0x08001670   0x08001670   0x00000006   Code   RO         3653    i.TMR_ClearIntFlag  apm32f10x_tmr.o
     0x08001676   0x08001676   0x00000002   PAD
     0x08001678   0x08001678   0x0000008c   Code   RO         3709    i.TMR_ConfigTimeBase  apm32f10x_tmr.o
@@ -3387,189 +3387,189 @@ Memory Map of the image
     0x08001b84   0x08001b84   0x0000017c   Code   RO         4999    i.Usart3_Dma_Init   usart.o
     0x08001d00   0x08001d00   0x000000f8   Code   RO         5205    i.Usart3_Recv_thread_entry  my_usart.o
     0x08001df8   0x08001df8   0x00000230   Code   RO         5206    i.Usart_Recv_thread_entry  my_usart.o
-    0x08002028   0x08002028   0x00000030   Code   RO         7320    i._SysTick_Config   board_1.o
-    0x08002058   0x08002058   0x0000004c   Code   RO         6685    i.__rt_ffs          kservice.o
-    0x080020a4   0x080020a4   0x0000000e   Code   RO         7716    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080020b2   0x080020b2   0x00000002   Code   RO         7717    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080020b4   0x080020b4   0x0000000e   Code   RO         7718    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08002028   0x08002028   0x00000030   Code   RO         7425    i._SysTick_Config   board_1.o
+    0x08002058   0x08002058   0x0000004c   Code   RO         6790    i.__rt_ffs          kservice.o
+    0x080020a4   0x080020a4   0x0000000e   Code   RO         7821    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080020b2   0x080020b2   0x00000002   Code   RO         7822    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080020b4   0x080020b4   0x0000000e   Code   RO         7823    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080020c2   0x080020c2   0x00000002   PAD
-    0x080020c4   0x080020c4   0x00000084   Code   RO         7072    i._rt_thread_init   thread.o
-    0x08002148   0x08002148   0x00000042   Code   RO         7204    i._rt_timer_init    timer.o
-    0x0800218a   0x0800218a   0x0000001c   Code   RO         7205    i._rt_timer_remove  timer.o
-    0x080021a6   0x080021a6   0x0000001c   Code   RO         7073    i._thread_cleanup_execute  thread.o
+    0x080020c4   0x080020c4   0x00000084   Code   RO         7177    i._rt_thread_init   thread.o
+    0x08002148   0x08002148   0x00000042   Code   RO         7309    i._rt_timer_init    timer.o
+    0x0800218a   0x0800218a   0x0000001c   Code   RO         7310    i._rt_timer_remove  timer.o
+    0x080021a6   0x080021a6   0x0000001c   Code   RO         7178    i._thread_cleanup_execute  thread.o
     0x080021c2   0x080021c2   0x00000002   PAD
-    0x080021c4   0x080021c4   0x0000009c   Code   RO         6172    i.build_my_net_thread  my_netapp.o
+    0x080021c4   0x080021c4   0x0000009c   Code   RO         6277    i.build_my_net_thread  my_netapp.o
     0x08002260   0x08002260   0x000000c4   Code   RO         5208    i.build_usart3_recv_thread  my_usart.o
     0x08002324   0x08002324   0x000000c4   Code   RO         5209    i.build_usart_recv_thread  my_usart.o
-    0x080023e8   0x080023e8   0x00000034   Code   RO         5364    i.close             socket.o
-    0x0800241c   0x0800241c   0x00000114   Code   RO         5365    i.connect           socket.o
-    0x08002530   0x08002530   0x00000026   Code   RO         5366    i.disconnect        socket.o
+    0x080023e8   0x080023e8   0x00000034   Code   RO         5469    i.close             socket.o
+    0x0800241c   0x0800241c   0x00000114   Code   RO         5470    i.connect           socket.o
+    0x08002530   0x08002530   0x00000026   Code   RO         5471    i.disconnect        socket.o
     0x08002556   0x08002556   0x00000002   PAD
-    0x08002558   0x08002558   0x0000016c   Code   RO         6141    i.do_udp            udp.o
-    0x080026c4   0x080026c4   0x00000010   Code   RO         5604    i.getGAR            w5500.o
-    0x080026d4   0x080026d4   0x00000010   Code   RO         5606    i.getIINCHIP_TxMAX  w5500.o
-    0x080026e4   0x080026e4   0x0000000c   Code   RO         5608    i.getPHYStatus      w5500.o
-    0x080026f0   0x080026f0   0x00000012   Code   RO         5609    i.getSHAR           w5500.o
-    0x08002702   0x08002702   0x00000012   Code   RO         5611    i.getSIPR           w5500.o
-    0x08002714   0x08002714   0x00000012   Code   RO         5612    i.getSIR            w5500.o
-    0x08002726   0x08002726   0x00000012   Code   RO         5613    i.getSUBR           w5500.o
-    0x08002738   0x08002738   0x00000042   Code   RO         6173    i.getSn_DIPR        my_netapp.o
-    0x0800277a   0x0800277a   0x00000012   Code   RO         5614    i.getSn_IR          w5500.o
-    0x0800278c   0x0800278c   0x00000054   Code   RO         5615    i.getSn_RX_RSR      w5500.o
-    0x080027e0   0x080027e0   0x00000012   Code   RO         5616    i.getSn_SR          w5500.o
-    0x080027f2   0x080027f2   0x00000054   Code   RO         5617    i.getSn_TX_FSR      w5500.o
+    0x08002558   0x08002558   0x0000016c   Code   RO         6246    i.do_udp            udp.o
+    0x080026c4   0x080026c4   0x00000010   Code   RO         5709    i.getGAR            w5500.o
+    0x080026d4   0x080026d4   0x00000010   Code   RO         5711    i.getIINCHIP_TxMAX  w5500.o
+    0x080026e4   0x080026e4   0x0000000c   Code   RO         5713    i.getPHYStatus      w5500.o
+    0x080026f0   0x080026f0   0x00000012   Code   RO         5714    i.getSHAR           w5500.o
+    0x08002702   0x08002702   0x00000012   Code   RO         5716    i.getSIPR           w5500.o
+    0x08002714   0x08002714   0x00000012   Code   RO         5717    i.getSIR            w5500.o
+    0x08002726   0x08002726   0x00000012   Code   RO         5718    i.getSUBR           w5500.o
+    0x08002738   0x08002738   0x00000042   Code   RO         6278    i.getSn_DIPR        my_netapp.o
+    0x0800277a   0x0800277a   0x00000012   Code   RO         5719    i.getSn_IR          w5500.o
+    0x0800278c   0x0800278c   0x00000054   Code   RO         5720    i.getSn_RX_RSR      w5500.o
+    0x080027e0   0x080027e0   0x00000012   Code   RO         5721    i.getSn_SR          w5500.o
+    0x080027f2   0x080027f2   0x00000054   Code   RO         5722    i.getSn_TX_FSR      w5500.o
     0x08002846   0x08002846   0x00000002   PAD
-    0x08002848   0x08002848   0x0000004c   Code   RO         5827    i.gpio_for_w5500_config  w5500_conf.o
+    0x08002848   0x08002848   0x0000004c   Code   RO         5932    i.gpio_for_w5500_config  w5500_conf.o
     0x08002894   0x08002894   0x0000026c   Code   RO         5055    i.gpio_init         gpio.o
-    0x08002b00   0x08002b00   0x0000000a   Code   RO         5828    i.iinchip_csoff     w5500_conf.o
-    0x08002b0a   0x08002b0a   0x0000000a   Code   RO         5829    i.iinchip_cson      w5500_conf.o
-    0x08002b14   0x08002b14   0x00000028   Code   RO         5298    i.init_data         my_misc.o
-    0x08002b3c   0x08002b3c   0x0000003e   Code   RO         5367    i.listen            socket.o
+    0x08002b00   0x08002b00   0x0000000a   Code   RO         5933    i.iinchip_csoff     w5500_conf.o
+    0x08002b0a   0x08002b0a   0x0000000a   Code   RO         5934    i.iinchip_cson      w5500_conf.o
+    0x08002b14   0x08002b14   0x00000028   Code   RO         5403    i.init_data         my_misc.o
+    0x08002b3c   0x08002b3c   0x0000003e   Code   RO         5472    i.listen            socket.o
     0x08002b7a   0x08002b7a   0x00000002   PAD
     0x08002b7c   0x08002b7c   0x000003b4   Code   RO         4622    i.main              main.o
-    0x08002f30   0x08002f30   0x0000000e   Code   RO         6320    i.main_thread_entry  components.o
+    0x08002f30   0x08002f30   0x0000000e   Code   RO         6425    i.main_thread_entry  components.o
     0x08002f3e   0x08002f3e   0x00000002   PAD
     0x08002f40   0x08002f40   0x000000c8   Code   RO         4623    i.msg_thread_entry  main.o
-    0x08003008   0x08003008   0x00000022   Code   RO         6174    i.mu_net_thread_entry  my_netapp.o
+    0x08003008   0x08003008   0x00000022   Code   RO         6279    i.mu_net_thread_entry  my_netapp.o
     0x0800302a   0x0800302a   0x00000002   PAD
-    0x0800302c   0x0800302c   0x00000078   Code   RO         6862    i.plug_holes        mem.o
-    0x080030a4   0x080030a4   0x00000198   Code   RO         6687    i.print_number      kservice.o
-    0x0800323c   0x0800323c   0x00000042   Code   RO         5368    i.recv              socket.o
+    0x0800302c   0x0800302c   0x00000078   Code   RO         6967    i.plug_holes        mem.o
+    0x080030a4   0x080030a4   0x00000198   Code   RO         6792    i.print_number      kservice.o
+    0x0800323c   0x0800323c   0x00000042   Code   RO         5473    i.recv              socket.o
     0x0800327e   0x0800327e   0x00000002   PAD
-    0x08003280   0x08003280   0x00000094   Code   RO         5619    i.recv_data_processing  w5500.o
-    0x08003314   0x08003314   0x00000200   Code   RO         5369    i.recvfrom          socket.o
+    0x08003280   0x08003280   0x00000094   Code   RO         5724    i.recv_data_processing  w5500.o
+    0x08003314   0x08003314   0x00000200   Code   RO         5474    i.recvfrom          socket.o
     0x08003514   0x08003514   0x000002f0   Code   RO         4624    i.remote_msg_handle  main.o
-    0x08003804   0x08003804   0x00000028   Code   RO         5833    i.reset_w5500       w5500_conf.o
-    0x0800382c   0x0800382c   0x00000030   Code   RO         6321    i.rt_application_init  components.o
-    0x0800385c   0x0800385c   0x0000001c   Code   RO         6322    i.rt_components_board_init  components.o
-    0x08003878   0x08003878   0x0000001c   Code   RO         6323    i.rt_components_init  components.o
-    0x08003894   0x08003894   0x00000020   Code   RO         7006    i.rt_enter_critical  scheduler.o
-    0x080038b4   0x080038b4   0x00000044   Code   RO         7007    i.rt_exit_critical  scheduler.o
-    0x080038f8   0x080038f8   0x000000e0   Code   RO         6864    i.rt_free           mem.o
-    0x080039d8   0x080039d8   0x00000008   Code   RO         7321    i.rt_heap_begin_get  board_1.o
-    0x080039e0   0x080039e0   0x00000008   Code   RO         7322    i.rt_heap_end_get   board_1.o
-    0x080039e8   0x080039e8   0x0000006c   Code   RO         7323    i.rt_hw_board_init  board_1.o
-    0x08003a54   0x08003a54   0x00000050   Code   RO         7325    i.rt_hw_console_output  board_1.o
-    0x08003aa4   0x08003aa4   0x00000200   Code   RO         6242    i.rt_hw_hard_fault_exception  cpuport.o
-    0x08003ca4   0x08003ca4   0x0000004c   Code   RO         6243    i.rt_hw_stack_init  cpuport.o
-    0x08003cf0   0x08003cf0   0x00000020   Code   RO         6658    i.rt_interrupt_enter  irq.o
-    0x08003d10   0x08003d10   0x00000020   Code   RO         6660    i.rt_interrupt_leave  irq.o
-    0x08003d30   0x08003d30   0x00000014   Code   RO         6422    i.rt_ipc_list_resume  ipc.o
-    0x08003d44   0x08003d44   0x00000032   Code   RO         6423    i.rt_ipc_list_resume_all  ipc.o
-    0x08003d76   0x08003d76   0x0000006e   Code   RO         6424    i.rt_ipc_list_suspend  ipc.o
-    0x08003de4   0x08003de4   0x00000010   Code   RO         6425    i.rt_ipc_object_init  ipc.o
-    0x08003df4   0x08003df4   0x00000030   Code   RO         6691    i.rt_kprintf        kservice.o
-    0x08003e24   0x08003e24   0x00000006   Code   RO         6426    i.rt_list_init      ipc.o
-    0x08003e2a   0x08003e2a   0x00000006   Code   RO         7008    i.rt_list_init      scheduler.o
-    0x08003e30   0x08003e30   0x00000006   Code   RO         7206    i.rt_list_init      timer.o
-    0x08003e36   0x08003e36   0x0000000e   Code   RO         6918    i.rt_list_insert_after  object.o
-    0x08003e44   0x08003e44   0x0000000e   Code   RO         7074    i.rt_list_insert_after  thread.o
-    0x08003e52   0x08003e52   0x0000000e   Code   RO         7207    i.rt_list_insert_after  timer.o
-    0x08003e60   0x08003e60   0x0000000e   Code   RO         6427    i.rt_list_insert_before  ipc.o
-    0x08003e6e   0x08003e6e   0x00000010   Code   RO         6428    i.rt_list_isempty   ipc.o
-    0x08003e7e   0x08003e7e   0x00000010   Code   RO         7208    i.rt_list_isempty   timer.o
-    0x08003e8e   0x08003e8e   0x00000012   Code   RO         6919    i.rt_list_remove    object.o
-    0x08003ea0   0x08003ea0   0x00000012   Code   RO         7075    i.rt_list_remove    thread.o
-    0x08003eb2   0x08003eb2   0x00000012   Code   RO         7209    i.rt_list_remove    timer.o
-    0x08003ec4   0x08003ec4   0x0000016c   Code   RO         6865    i.rt_malloc         mem.o
-    0x08004030   0x08004030   0x0000003a   Code   RO         6695    i.rt_memcpy         kservice.o
-    0x0800406a   0x0800406a   0x00000014   Code   RO         6697    i.rt_memset         kservice.o
-    0x0800407e   0x0800407e   0x00000054   Code   RO         6920    i.rt_object_allocate  object.o
-    0x080040d2   0x080040d2   0x00000024   Code   RO         6921    i.rt_object_delete  object.o
-    0x080040f6   0x080040f6   0x0000001e   Code   RO         6922    i.rt_object_detach  object.o
-    0x08004114   0x08004114   0x00000028   Code   RO         6924    i.rt_object_get_information  object.o
-    0x0800413c   0x0800413c   0x00000056   Code   RO         6928    i.rt_object_init    object.o
-    0x08004192   0x08004192   0x00000012   Code   RO         6929    i.rt_object_is_systemobject  object.o
-    0x080041a4   0x080041a4   0x00000010   Code   RO         7326    i.rt_os_tick_callback  board_1.o
-    0x080041b4   0x080041b4   0x00000084   Code   RO         7009    i.rt_schedule       scheduler.o
-    0x08004238   0x08004238   0x00000050   Code   RO         7010    i.rt_schedule_insert_thread  scheduler.o
-    0x08004288   0x08004288   0x00000054   Code   RO         7011    i.rt_schedule_remove_thread  scheduler.o
-    0x080042dc   0x080042dc   0x0000002a   Code   RO         6454    i.rt_sem_create     ipc.o
-    0x08004306   0x08004306   0x00000016   Code   RO         6455    i.rt_sem_delete     ipc.o
-    0x0800431c   0x0800431c   0x00000026   Code   RO         6457    i.rt_sem_init       ipc.o
-    0x08004342   0x08004342   0x00000052   Code   RO         6458    i.rt_sem_release    ipc.o
-    0x08004394   0x08004394   0x00000074   Code   RO         6459    i.rt_sem_take       ipc.o
-    0x08004408   0x08004408   0x000000b0   Code   RO         6699    i.rt_show_version   kservice.o
-    0x080044b8   0x080044b8   0x00000034   Code   RO         6707    i.rt_strncpy        kservice.o
-    0x080044ec   0x080044ec   0x000000f8   Code   RO         6868    i.rt_system_heap_init  mem.o
-    0x080045e4   0x080045e4   0x0000004c   Code   RO         7012    i.rt_system_scheduler_init  scheduler.o
-    0x08004630   0x08004630   0x00000030   Code   RO         7013    i.rt_system_scheduler_start  scheduler.o
-    0x08004660   0x08004660   0x0000001c   Code   RO         7210    i.rt_system_timer_init  timer.o
-    0x0800467c   0x0800467c   0x00000002   Code   RO         7211    i.rt_system_timer_thread_init  timer.o
-    0x0800467e   0x0800467e   0x00000050   Code   RO         7077    i.rt_thread_create  thread.o
-    0x080046ce   0x080046ce   0x0000000c   Code   RO         7078    i.rt_thread_delay   thread.o
+    0x08003804   0x08003804   0x00000028   Code   RO         5938    i.reset_w5500       w5500_conf.o
+    0x0800382c   0x0800382c   0x00000030   Code   RO         6426    i.rt_application_init  components.o
+    0x0800385c   0x0800385c   0x0000001c   Code   RO         6427    i.rt_components_board_init  components.o
+    0x08003878   0x08003878   0x0000001c   Code   RO         6428    i.rt_components_init  components.o
+    0x08003894   0x08003894   0x00000020   Code   RO         7111    i.rt_enter_critical  scheduler.o
+    0x080038b4   0x080038b4   0x00000044   Code   RO         7112    i.rt_exit_critical  scheduler.o
+    0x080038f8   0x080038f8   0x000000e0   Code   RO         6969    i.rt_free           mem.o
+    0x080039d8   0x080039d8   0x00000008   Code   RO         7426    i.rt_heap_begin_get  board_1.o
+    0x080039e0   0x080039e0   0x00000008   Code   RO         7427    i.rt_heap_end_get   board_1.o
+    0x080039e8   0x080039e8   0x0000006c   Code   RO         7428    i.rt_hw_board_init  board_1.o
+    0x08003a54   0x08003a54   0x00000050   Code   RO         7430    i.rt_hw_console_output  board_1.o
+    0x08003aa4   0x08003aa4   0x00000200   Code   RO         6347    i.rt_hw_hard_fault_exception  cpuport.o
+    0x08003ca4   0x08003ca4   0x0000004c   Code   RO         6348    i.rt_hw_stack_init  cpuport.o
+    0x08003cf0   0x08003cf0   0x00000020   Code   RO         6763    i.rt_interrupt_enter  irq.o
+    0x08003d10   0x08003d10   0x00000020   Code   RO         6765    i.rt_interrupt_leave  irq.o
+    0x08003d30   0x08003d30   0x00000014   Code   RO         6527    i.rt_ipc_list_resume  ipc.o
+    0x08003d44   0x08003d44   0x00000032   Code   RO         6528    i.rt_ipc_list_resume_all  ipc.o
+    0x08003d76   0x08003d76   0x0000006e   Code   RO         6529    i.rt_ipc_list_suspend  ipc.o
+    0x08003de4   0x08003de4   0x00000010   Code   RO         6530    i.rt_ipc_object_init  ipc.o
+    0x08003df4   0x08003df4   0x00000030   Code   RO         6796    i.rt_kprintf        kservice.o
+    0x08003e24   0x08003e24   0x00000006   Code   RO         6531    i.rt_list_init      ipc.o
+    0x08003e2a   0x08003e2a   0x00000006   Code   RO         7113    i.rt_list_init      scheduler.o
+    0x08003e30   0x08003e30   0x00000006   Code   RO         7311    i.rt_list_init      timer.o
+    0x08003e36   0x08003e36   0x0000000e   Code   RO         7023    i.rt_list_insert_after  object.o
+    0x08003e44   0x08003e44   0x0000000e   Code   RO         7179    i.rt_list_insert_after  thread.o
+    0x08003e52   0x08003e52   0x0000000e   Code   RO         7312    i.rt_list_insert_after  timer.o
+    0x08003e60   0x08003e60   0x0000000e   Code   RO         6532    i.rt_list_insert_before  ipc.o
+    0x08003e6e   0x08003e6e   0x00000010   Code   RO         6533    i.rt_list_isempty   ipc.o
+    0x08003e7e   0x08003e7e   0x00000010   Code   RO         7313    i.rt_list_isempty   timer.o
+    0x08003e8e   0x08003e8e   0x00000012   Code   RO         7024    i.rt_list_remove    object.o
+    0x08003ea0   0x08003ea0   0x00000012   Code   RO         7180    i.rt_list_remove    thread.o
+    0x08003eb2   0x08003eb2   0x00000012   Code   RO         7314    i.rt_list_remove    timer.o
+    0x08003ec4   0x08003ec4   0x0000016c   Code   RO         6970    i.rt_malloc         mem.o
+    0x08004030   0x08004030   0x0000003a   Code   RO         6800    i.rt_memcpy         kservice.o
+    0x0800406a   0x0800406a   0x00000014   Code   RO         6802    i.rt_memset         kservice.o
+    0x0800407e   0x0800407e   0x00000054   Code   RO         7025    i.rt_object_allocate  object.o
+    0x080040d2   0x080040d2   0x00000024   Code   RO         7026    i.rt_object_delete  object.o
+    0x080040f6   0x080040f6   0x0000001e   Code   RO         7027    i.rt_object_detach  object.o
+    0x08004114   0x08004114   0x00000028   Code   RO         7029    i.rt_object_get_information  object.o
+    0x0800413c   0x0800413c   0x00000056   Code   RO         7033    i.rt_object_init    object.o
+    0x08004192   0x08004192   0x00000012   Code   RO         7034    i.rt_object_is_systemobject  object.o
+    0x080041a4   0x080041a4   0x00000010   Code   RO         7431    i.rt_os_tick_callback  board_1.o
+    0x080041b4   0x080041b4   0x00000084   Code   RO         7114    i.rt_schedule       scheduler.o
+    0x08004238   0x08004238   0x00000050   Code   RO         7115    i.rt_schedule_insert_thread  scheduler.o
+    0x08004288   0x08004288   0x00000054   Code   RO         7116    i.rt_schedule_remove_thread  scheduler.o
+    0x080042dc   0x080042dc   0x0000002a   Code   RO         6559    i.rt_sem_create     ipc.o
+    0x08004306   0x08004306   0x00000016   Code   RO         6560    i.rt_sem_delete     ipc.o
+    0x0800431c   0x0800431c   0x00000026   Code   RO         6562    i.rt_sem_init       ipc.o
+    0x08004342   0x08004342   0x00000052   Code   RO         6563    i.rt_sem_release    ipc.o
+    0x08004394   0x08004394   0x00000074   Code   RO         6564    i.rt_sem_take       ipc.o
+    0x08004408   0x08004408   0x000000b0   Code   RO         6804    i.rt_show_version   kservice.o
+    0x080044b8   0x080044b8   0x00000034   Code   RO         6812    i.rt_strncpy        kservice.o
+    0x080044ec   0x080044ec   0x000000f8   Code   RO         6973    i.rt_system_heap_init  mem.o
+    0x080045e4   0x080045e4   0x0000004c   Code   RO         7117    i.rt_system_scheduler_init  scheduler.o
+    0x08004630   0x08004630   0x00000030   Code   RO         7118    i.rt_system_scheduler_start  scheduler.o
+    0x08004660   0x08004660   0x0000001c   Code   RO         7315    i.rt_system_timer_init  timer.o
+    0x0800467c   0x0800467c   0x00000002   Code   RO         7316    i.rt_system_timer_thread_init  timer.o
+    0x0800467e   0x0800467e   0x00000050   Code   RO         7182    i.rt_thread_create  thread.o
+    0x080046ce   0x080046ce   0x0000000c   Code   RO         7183    i.rt_thread_delay   thread.o
     0x080046da   0x080046da   0x00000002   PAD
-    0x080046dc   0x080046dc   0x00000058   Code   RO         7082    i.rt_thread_exit    thread.o
-    0x08004734   0x08004734   0x00000008   Code   RO         6387    i.rt_thread_idle_entry  idle.o
-    0x0800473c   0x0800473c   0x00000060   Code   RO         6388    i.rt_thread_idle_excute  idle.o
-    0x0800479c   0x0800479c   0x0000003c   Code   RO         6390    i.rt_thread_idle_init  idle.o
-    0x080047d8   0x080047d8   0x00000034   Code   RO         7084    i.rt_thread_init    thread.o
-    0x0800480c   0x0800480c   0x0000003c   Code   RO         7086    i.rt_thread_resume  thread.o
-    0x08004848   0x08004848   0x0000000c   Code   RO         7087    i.rt_thread_self    thread.o
-    0x08004854   0x08004854   0x00000044   Code   RO         7088    i.rt_thread_sleep   thread.o
-    0x08004898   0x08004898   0x0000002c   Code   RO         7089    i.rt_thread_startup  thread.o
-    0x080048c4   0x080048c4   0x00000044   Code   RO         7090    i.rt_thread_suspend  thread.o
-    0x08004908   0x08004908   0x00000020   Code   RO         7091    i.rt_thread_timeout  thread.o
-    0x08004928   0x08004928   0x00000064   Code   RO         7092    i.rt_thread_yield   thread.o
-    0x0800498c   0x0800498c   0x0000000c   Code   RO         6280    i.rt_tick_get       clock.o
-    0x08004998   0x08004998   0x00000030   Code   RO         6281    i.rt_tick_increase  clock.o
-    0x080049c8   0x080049c8   0x000000a4   Code   RO         7212    i.rt_timer_check    timer.o
-    0x08004a6c   0x08004a6c   0x00000062   Code   RO         7213    i.rt_timer_control  timer.o
-    0x08004ace   0x08004ace   0x00000028   Code   RO         7216    i.rt_timer_detach   timer.o
-    0x08004af6   0x08004af6   0x0000002e   Code   RO         7217    i.rt_timer_init     timer.o
-    0x08004b24   0x08004b24   0x000000ec   Code   RO         7220    i.rt_timer_start    timer.o
-    0x08004c10   0x08004c10   0x00000030   Code   RO         7221    i.rt_timer_stop     timer.o
-    0x08004c40   0x08004c40   0x00000340   Code   RO         6710    i.rt_vsnprintf      kservice.o
-    0x08004f80   0x08004f80   0x00000004   Code   RO         6324    i.rti_board_end     components.o
-    0x08004f84   0x08004f84   0x00000004   Code   RO         6325    i.rti_board_start   components.o
-    0x08004f88   0x08004f88   0x00000004   Code   RO         6326    i.rti_end           components.o
-    0x08004f8c   0x08004f8c   0x00000004   Code   RO         6327    i.rti_start         components.o
-    0x08004f90   0x08004f90   0x0000002a   Code   RO         6328    i.rtthread_startup  components.o
+    0x080046dc   0x080046dc   0x00000058   Code   RO         7187    i.rt_thread_exit    thread.o
+    0x08004734   0x08004734   0x00000008   Code   RO         6492    i.rt_thread_idle_entry  idle.o
+    0x0800473c   0x0800473c   0x00000060   Code   RO         6493    i.rt_thread_idle_excute  idle.o
+    0x0800479c   0x0800479c   0x0000003c   Code   RO         6495    i.rt_thread_idle_init  idle.o
+    0x080047d8   0x080047d8   0x00000034   Code   RO         7189    i.rt_thread_init    thread.o
+    0x0800480c   0x0800480c   0x0000003c   Code   RO         7191    i.rt_thread_resume  thread.o
+    0x08004848   0x08004848   0x0000000c   Code   RO         7192    i.rt_thread_self    thread.o
+    0x08004854   0x08004854   0x00000044   Code   RO         7193    i.rt_thread_sleep   thread.o
+    0x08004898   0x08004898   0x0000002c   Code   RO         7194    i.rt_thread_startup  thread.o
+    0x080048c4   0x080048c4   0x00000044   Code   RO         7195    i.rt_thread_suspend  thread.o
+    0x08004908   0x08004908   0x00000020   Code   RO         7196    i.rt_thread_timeout  thread.o
+    0x08004928   0x08004928   0x00000064   Code   RO         7197    i.rt_thread_yield   thread.o
+    0x0800498c   0x0800498c   0x0000000c   Code   RO         6385    i.rt_tick_get       clock.o
+    0x08004998   0x08004998   0x00000030   Code   RO         6386    i.rt_tick_increase  clock.o
+    0x080049c8   0x080049c8   0x000000a4   Code   RO         7317    i.rt_timer_check    timer.o
+    0x08004a6c   0x08004a6c   0x00000062   Code   RO         7318    i.rt_timer_control  timer.o
+    0x08004ace   0x08004ace   0x00000028   Code   RO         7321    i.rt_timer_detach   timer.o
+    0x08004af6   0x08004af6   0x0000002e   Code   RO         7322    i.rt_timer_init     timer.o
+    0x08004b24   0x08004b24   0x000000ec   Code   RO         7325    i.rt_timer_start    timer.o
+    0x08004c10   0x08004c10   0x00000030   Code   RO         7326    i.rt_timer_stop     timer.o
+    0x08004c40   0x08004c40   0x00000340   Code   RO         6815    i.rt_vsnprintf      kservice.o
+    0x08004f80   0x08004f80   0x00000004   Code   RO         6429    i.rti_board_end     components.o
+    0x08004f84   0x08004f84   0x00000004   Code   RO         6430    i.rti_board_start   components.o
+    0x08004f88   0x08004f88   0x00000004   Code   RO         6431    i.rti_end           components.o
+    0x08004f8c   0x08004f8c   0x00000004   Code   RO         6432    i.rti_start         components.o
+    0x08004f90   0x08004f90   0x0000002a   Code   RO         6433    i.rtthread_startup  components.o
     0x08004fba   0x08004fba   0x00000002   PAD
-    0x08004fbc   0x08004fbc   0x000000f0   Code   RO         5370    i.send              socket.o
-    0x080050ac   0x080050ac   0x00000094   Code   RO         5620    i.send_data_processing  w5500.o
-    0x08005140   0x08005140   0x0000010c   Code   RO         5371    i.sendto            socket.o
-    0x0800524c   0x0800524c   0x00000458   Code   RO         6175    i.server_rest       my_netapp.o
-    0x080056a4   0x080056a4   0x00000010   Code   RO         5621    i.setGAR            w5500.o
-    0x080056b4   0x080056b4   0x00000010   Code   RO         5623    i.setRCR            w5500.o
-    0x080056c4   0x080056c4   0x0000001a   Code   RO         5624    i.setRTR            w5500.o
-    0x080056de   0x080056de   0x00000012   Code   RO         5625    i.setSHAR           w5500.o
-    0x080056f0   0x080056f0   0x00000012   Code   RO         5626    i.setSIPR           w5500.o
-    0x08005702   0x08005702   0x00000012   Code   RO         5627    i.setSUBR           w5500.o
-    0x08005714   0x08005714   0x00000016   Code   RO         5628    i.setSn_IR          w5500.o
+    0x08004fbc   0x08004fbc   0x000000f0   Code   RO         5475    i.send              socket.o
+    0x080050ac   0x080050ac   0x00000094   Code   RO         5725    i.send_data_processing  w5500.o
+    0x08005140   0x08005140   0x0000010c   Code   RO         5476    i.sendto            socket.o
+    0x0800524c   0x0800524c   0x00000458   Code   RO         6280    i.server_rest       my_netapp.o
+    0x080056a4   0x080056a4   0x00000010   Code   RO         5726    i.setGAR            w5500.o
+    0x080056b4   0x080056b4   0x00000010   Code   RO         5728    i.setRCR            w5500.o
+    0x080056c4   0x080056c4   0x0000001a   Code   RO         5729    i.setRTR            w5500.o
+    0x080056de   0x080056de   0x00000012   Code   RO         5730    i.setSHAR           w5500.o
+    0x080056f0   0x080056f0   0x00000012   Code   RO         5731    i.setSIPR           w5500.o
+    0x08005702   0x08005702   0x00000012   Code   RO         5732    i.setSUBR           w5500.o
+    0x08005714   0x08005714   0x00000016   Code   RO         5733    i.setSn_IR          w5500.o
     0x0800572a   0x0800572a   0x00000002   PAD
-    0x0800572c   0x0800572c   0x00000154   Code   RO         5834    i.set_w5500_ip      w5500_conf.o
-    0x08005880   0x08005880   0x00000088   Code   RO         5835    i.set_w5500_mac     w5500_conf.o
-    0x08005908   0x08005908   0x00000026   Code   RO         6712    i.skip_atoi         kservice.o
+    0x0800572c   0x0800572c   0x00000154   Code   RO         5939    i.set_w5500_ip      w5500_conf.o
+    0x08005880   0x08005880   0x00000088   Code   RO         5940    i.set_w5500_mac     w5500_conf.o
+    0x08005908   0x08005908   0x00000026   Code   RO         6817    i.skip_atoi         kservice.o
     0x0800592e   0x0800592e   0x00000002   PAD
-    0x08005930   0x08005930   0x000000c4   Code   RO         5372    i.socket            socket.o
-    0x080059f4   0x080059f4   0x00000088   Code   RO         5631    i.socket_buf_init   w5500.o
+    0x08005930   0x08005930   0x000000c4   Code   RO         5477    i.socket            socket.o
+    0x080059f4   0x080059f4   0x00000088   Code   RO         5736    i.socket_buf_init   w5500.o
     0x08005a7c   0x08005a7c   0x00000038   Code   RO         5130    i.spi_read_send_byte  spi.o
-    0x08005ab4   0x08005ab4   0x00000018   Code   RO         5334    i.start_time        my_time.o
-    0x08005acc   0x08005acc   0x00000038   Code   RO         5299    i.start_voice_play  my_misc.o
-    0x08005b04   0x08005b04   0x00000010   Code   RO         5335    i.stop_time         my_time.o
-    0x08005b14   0x08005b14   0x00000034   Code   RO         5300    i.stop_voice_play   my_misc.o
-    0x08005b48   0x08005b48   0x00000132   Code   RO         6176    i.tcp_client_send   my_netapp.o
+    0x08005ab4   0x08005ab4   0x00000018   Code   RO         5439    i.start_time        my_time.o
+    0x08005acc   0x08005acc   0x00000038   Code   RO         5404    i.start_voice_play  my_misc.o
+    0x08005b04   0x08005b04   0x00000010   Code   RO         5440    i.stop_time         my_time.o
+    0x08005b14   0x08005b14   0x00000034   Code   RO         5405    i.stop_voice_play   my_misc.o
+    0x08005b48   0x08005b48   0x00000132   Code   RO         6281    i.tcp_client_send   my_netapp.o
     0x08005c7a   0x08005c7a   0x00000002   PAD
-    0x08005c7c   0x08005c7c   0x000000e4   Code   RO         6177    i.tcp_server_list   my_netapp.o
+    0x08005c7c   0x08005c7c   0x000000e4   Code   RO         6282    i.tcp_server_list   my_netapp.o
     0x08005d60   0x08005d60   0x00000044   Code   RO         5091    i.time1_init        time.o
-    0x08005da4   0x08005da4   0x00000088   Code   RO         7327    i.uart_init         board_1.o
+    0x08005da4   0x08005da4   0x00000088   Code   RO         7432    i.uart_init         board_1.o
     0x08005e2c   0x08005e2c   0x00000078   Code   RO         5211    i.usart2_dma_send   my_usart.o
     0x08005ea4   0x08005ea4   0x00000030   Code   RO         5213    i.usart3_dma_send   my_usart.o
     0x08005ed4   0x08005ed4   0x0000074c   Code   RO         4625    i.usart3_msg_handle  main.o
     0x08006620   0x08006620   0x0000004a   Code   RO         5215    i.usart3_send_comm  my_usart.o
     0x0800666a   0x0800666a   0x00000002   PAD
-    0x0800666c   0x0800666c   0x00000024   Code   RO         5837    i.wiz_cs            w5500_conf.o
-    0x08006690   0x08006690   0x00000068   Code   RO         5838    i.wiz_read_buf      w5500_conf.o
-    0x080066f8   0x080066f8   0x00000068   Code   RO         5839    i.wiz_write_buf     w5500_conf.o
-    0x08006760   0x08006760   0x00000122   Data   RO         6714    .constdata          kservice.o
+    0x0800666c   0x0800666c   0x00000024   Code   RO         5942    i.wiz_cs            w5500_conf.o
+    0x08006690   0x08006690   0x00000068   Code   RO         5943    i.wiz_read_buf      w5500_conf.o
+    0x080066f8   0x080066f8   0x00000068   Code   RO         5944    i.wiz_write_buf     w5500_conf.o
+    0x08006760   0x08006760   0x00000122   Data   RO         6819    .constdata          kservice.o
     0x08006882   0x08006882   0x00000002   PAD
-    0x08006884   0x08006884   0x00000004   Data   RO         6329    .rti_fn.0           components.o
-    0x08006888   0x08006888   0x00000004   Data   RO         6330    .rti_fn.0.end       components.o
-    0x0800688c   0x0800688c   0x00000004   Data   RO         7329    .rti_fn.1           board_1.o
-    0x08006890   0x08006890   0x00000004   Data   RO         6331    .rti_fn.1.end       components.o
-    0x08006894   0x08006894   0x00000004   Data   RO         6332    .rti_fn.6.end       components.o
-    0x08006898   0x08006898   0x00000020   Data   RO         7714    Region$$Table       anon$$obj.o
+    0x08006884   0x08006884   0x00000004   Data   RO         6434    .rti_fn.0           components.o
+    0x08006888   0x08006888   0x00000004   Data   RO         6435    .rti_fn.0.end       components.o
+    0x0800688c   0x0800688c   0x00000004   Data   RO         7434    .rti_fn.1           board_1.o
+    0x08006890   0x08006890   0x00000004   Data   RO         6436    .rti_fn.1.end       components.o
+    0x08006894   0x08006894   0x00000004   Data   RO         6437    .rti_fn.6.end       components.o
+    0x08006898   0x08006898   0x00000020   Data   RO         7819    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080068b8, Size: 0x00004e10, Max: 0x00005000, ABSOLUTE, COMPRESSED[0x0000006c])
@@ -3580,33 +3580,33 @@ Memory Map of the image
     0x20000004   COMPRESSED   0x0000002c   Data   RW         4626    .data               main.o
     0x20000030   COMPRESSED   0x00000004   Data   RW         5001    .data               usart.o
     0x20000034   COMPRESSED   0x00000038   Data   RW         5217    .data               my_usart.o
-    0x2000006c   COMPRESSED   0x00000010   Data   RW         5633    .data               w5500.o
-    0x2000007c   COMPRESSED   0x00000029   Data   RW         5842    .data               w5500_conf.o
+    0x2000006c   COMPRESSED   0x00000010   Data   RW         5738    .data               w5500.o
+    0x2000007c   COMPRESSED   0x00000029   Data   RW         5947    .data               w5500_conf.o
     0x200000a5   COMPRESSED   0x00000003   PAD
-    0x200000a8   COMPRESSED   0x00000004   Data   RW         6179    .data               my_netapp.o
-    0x200000ac   COMPRESSED   0x00000010   Data   RW         6244    .data               cpuport.o
-    0x200000bc   COMPRESSED   0x00000004   Data   RW         6283    .data               clock.o
-    0x200000c0   COMPRESSED   0x00000001   Data   RW         6661    .data               irq.o
+    0x200000a8   COMPRESSED   0x00000004   Data   RW         6284    .data               my_netapp.o
+    0x200000ac   COMPRESSED   0x00000010   Data   RW         6349    .data               cpuport.o
+    0x200000bc   COMPRESSED   0x00000004   Data   RW         6388    .data               clock.o
+    0x200000c0   COMPRESSED   0x00000001   Data   RW         6766    .data               irq.o
     0x200000c1   COMPRESSED   0x00000003   PAD
-    0x200000c4   COMPRESSED   0x00000018   Data   RW         6870    .data               mem.o
-    0x200000dc   COMPRESSED   0x00000060   Data   RW         6931    .data               object.o
-    0x2000013c   COMPRESSED   0x00000018   Data   RW         7015    .data               scheduler.o
-    0x20000154   COMPRESSED   0x0000000c   Data   RW         7222    .data               timer.o
+    0x200000c4   COMPRESSED   0x00000018   Data   RW         6975    .data               mem.o
+    0x200000dc   COMPRESSED   0x00000060   Data   RW         7036    .data               object.o
+    0x2000013c   COMPRESSED   0x00000018   Data   RW         7120    .data               scheduler.o
+    0x20000154   COMPRESSED   0x0000000c   Data   RW         7327    .data               timer.o
     0x20000160        -       0x00000218   Zero   RW         4950    .bss                can.o
     0x20000378        -       0x00000963   Zero   RW         5000    .bss                usart.o
     0x20000cdb        -       0x0000000c   Zero   RW         5180    .bss                my_can.o
     0x20000ce7   COMPRESSED   0x00000001   PAD
     0x20000ce8        -       0x00000420   Zero   RW         5216    .bss                my_usart.o
-    0x20001108        -       0x00000020   Zero   RW         5632    .bss                w5500.o
-    0x20001128        -       0x0000002e   Zero   RW         5841    .bss                w5500_conf.o
+    0x20001108        -       0x00000020   Zero   RW         5737    .bss                w5500.o
+    0x20001128        -       0x0000002e   Zero   RW         5946    .bss                w5500_conf.o
     0x20001156   COMPRESSED   0x00000002   PAD
-    0x20001158        -       0x000010d4   Zero   RW         6142    .bss                udp.o
-    0x2000222c        -       0x00000038   Zero   RW         6178    .bss                my_netapp.o
-    0x20002264        -       0x00000178   Zero   RW         6391    .bss                idle.o
-    0x200023dc        -       0x00000100   Zero   RW         6713    .bss                kservice.o
-    0x200024dc        -       0x00000020   Zero   RW         6869    .bss                mem.o
-    0x200024fc        -       0x00000100   Zero   RW         7014    .bss                scheduler.o
-    0x200025fc        -       0x00002410   Zero   RW         7328    .bss                board_1.o
+    0x20001158        -       0x000010d4   Zero   RW         6247    .bss                udp.o
+    0x2000222c        -       0x00000038   Zero   RW         6283    .bss                my_netapp.o
+    0x20002264        -       0x00000178   Zero   RW         6496    .bss                idle.o
+    0x200023dc        -       0x00000100   Zero   RW         6818    .bss                kservice.o
+    0x200024dc        -       0x00000020   Zero   RW         6974    .bss                mem.o
+    0x200024fc        -       0x00000100   Zero   RW         7119    .bss                scheduler.o
+    0x200025fc        -       0x00002410   Zero   RW         7433    .bss                board_1.o
     0x20004a0c   COMPRESSED   0x00000004   PAD
     0x20004a10        -       0x00000400   Zero   RW           69    STACK               startup_apm32f10x_hd.o
 
@@ -3644,7 +3644,7 @@ Image component sizes
        148         44          0          0          0       1437   my_misc.o
       2242        242          0          4         56       7440   my_netapp.o
         40         12          0          0          0        933   my_time.o
-      1442        360          0         56       1056       7401   my_usart.o
+      1442        360          0         56       1056       7317   my_usart.o
        326          4          0         96          0       8184   object.o
        526         90          0         24        256       8378   scheduler.o
       1710         54          0          0          0       7003   socket.o
@@ -3660,7 +3660,7 @@ Image component sizes
       1028        296          0         41         46       9774   w5500_conf.o
 
     ----------------------------------------------------------------------
-     25930       3094        668        352      19632     467701   Object Totals
+     25930       3094        668        352      19632     467617   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         38          0          2          6          7          0   (incl. Padding)
 
@@ -3701,8 +3701,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     26140       3110        668        352      19632     455317   Grand Totals
-     26140       3110        668        108      19632     455317   ELF Image Totals (compressed)
+     26140       3110        668        352      19632     455233   Grand Totals
+     26140       3110        668        108      19632     455233   ELF Image Totals (compressed)
      26140       3110        668        108          0          0   ROM Totals
 
 ==============================================================================
