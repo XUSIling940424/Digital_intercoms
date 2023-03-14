@@ -143,19 +143,15 @@ static void Usart_Recv_thread_entry(void *parameter)
 				usart2_dma_send(udp_7777_recv_buff[0].msg_buff[udp_7777_recv_buff[0].msg_output],120);
 				udp_7777_recv_buff[0].msg_input=((udp_7777_recv_buff[0].msg_input+1)%(MAX_NET_MSG_NUM));
 				if(My_Attribute.com_talk==0){
-				   My_Attribute.com_talk=1;  
-				}else{
-				   My_Attribute.com_talk_temp=1;
+				   My_Attribute.com_talk=1;  My_Attribute.com_talk_temp=0;
 				}
-//        rt_kprintf("1\n");				
+//        rt_kprintf("3\n");				
 			}	
       if(udp_7777_recv_buff[1].msg_input!=udp_7777_recv_buff[1].msg_output){ //µ⁄∂˛¬∑£¨ΩŒœ·”Ô“Ù
 				usart2_dma_send(udp_7777_recv_buff[1].msg_buff[udp_7777_recv_buff[1].msg_output],120);
 				udp_7777_recv_buff[1].msg_input=((udp_7777_recv_buff[1].msg_input+1)%(MAX_NET_MSG_NUM));
 				if(My_Attribute.lif_talk==0){
-				   My_Attribute.lif_talk=1;  
-				}else{
-				   My_Attribute.lif_talk_temp=1;
+				   My_Attribute.lif_talk=1;  My_Attribute.lif_talk_temp=0;
 				}				
 //        rt_kprintf("2\n");			  
 			}
@@ -163,9 +159,7 @@ static void Usart_Recv_thread_entry(void *parameter)
 				usart2_dma_send(udp_7777_recv_buff[2].msg_buff[udp_7777_recv_buff[2].msg_output],120);
 				udp_7777_recv_buff[2].msg_input=((udp_7777_recv_buff[2].msg_input+1)%(MAX_NET_MSG_NUM));
 				if(My_Attribute.pit_talk==0){
-				   My_Attribute.pit_talk=1;  
-				}else{
-				   My_Attribute.pit_talk_temp=1;
+				   My_Attribute.pit_talk=1;  My_Attribute.pit_talk_temp=0;
 				}					
 //        rt_kprintf("3\n");			  
 			}
@@ -173,9 +167,7 @@ static void Usart_Recv_thread_entry(void *parameter)
 				usart2_dma_send(udp_7777_recv_buff[3].msg_buff[udp_7777_recv_buff[3].msg_output],120);
 				udp_7777_recv_buff[3].msg_input=((udp_7777_recv_buff[3].msg_input+1)%(MAX_NET_MSG_NUM));
 				if(My_Attribute.car_talk==0){
-				   My_Attribute.car_talk=1;  
-				}else{
-				   My_Attribute.car_talk_temp=1;
+				   My_Attribute.car_talk=1;  My_Attribute.car_talk_temp=0;
 				}					
 //        rt_kprintf("4\n");				
 			}
@@ -183,9 +175,7 @@ static void Usart_Recv_thread_entry(void *parameter)
 				usart2_dma_send(udp_7777_recv_buff[4].msg_buff[udp_7777_recv_buff[4].msg_output],120);
 				udp_7777_recv_buff[4].msg_input=((udp_7777_recv_buff[4].msg_input+1)%(MAX_NET_MSG_NUM));
 				if(My_Attribute.dut_talk==0){
-				   My_Attribute.dut_talk=1;  
-				}else{
-				   My_Attribute.dut_talk_temp=1;
+				   My_Attribute.dut_talk=1;  My_Attribute.dut_talk_temp=0;
 				}					
 //        rt_kprintf("5\n");			  
 			}			

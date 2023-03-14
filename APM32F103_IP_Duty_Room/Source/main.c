@@ -167,57 +167,104 @@ static void msg_thread_entry(void *paramter)
 		}
 		/*状态检测*/
 		if(My_Attribute.com_talk==1){  //机房通话状态
-			if(My_Attribute.com_talk_temp==0){
+			if(My_Attribute.com_talk_old==0){
 				my_usart3_comm.Comm=TALL_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=remote_ip[3];
 				my_usart3_comm.Data[1]=Com_Room;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
-				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);
-			}else if(My_Attribute.com_talk_temp<250){
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);  //发送通话状态
+			}
+			if(My_Attribute.com_talk_temp>MAX_Time_Out)  //超时未接收
+			{
+			  My_Attribute.com_talk=0;  My_Attribute.com_talk_temp=0;
+			}
 			  My_Attribute.com_talk_temp++;
-			}else{
-			  My_Attribute.com_talk_temp=250;
+		}
+		if(My_Attribute.com_talk==0){
+		  if(My_Attribute.com_talk_old==1){
+				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
+				my_usart3_comm.Data[0]=remote_ip[3];
+				my_usart3_comm.Data[1]=Com_Room;
+				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);	//发送挂机信号 
 			}
 		}
+		My_Attribute.com_talk_old=My_Attribute.com_talk;
+		
 		if(My_Attribute.car_talk==1){  //轿顶通话状态
-			if(My_Attribute.car_talk_temp==0){
+			if(My_Attribute.car_talk_old==0){
 				my_usart3_comm.Comm=TALL_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=remote_ip[3];
 				my_usart3_comm.Data[1]=Car_roof;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
-				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);
-			}else if(My_Attribute.car_talk_temp<250){
-			  My_Attribute.car_talk_temp++;
-			}else{
-			  My_Attribute.car_talk_temp=250;
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);  //发送通话状态
+			}
+			if(My_Attribute.car_talk_temp>MAX_Time_Out)  //超时未接收
+			{
+			  My_Attribute.car_talk=0;  My_Attribute.car_talk_temp=0;
+			}
+			My_Attribute.car_talk_temp++;
+		}
+		if(My_Attribute.car_talk==0){
+		  if(My_Attribute.car_talk_old==1){
+				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
+				my_usart3_comm.Data[0]=remote_ip[3];
+				my_usart3_comm.Data[1]=Car_roof;
+				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);	//发送挂机信号
 			}
 		}
+		My_Attribute.car_talk_old=My_Attribute.car_talk;
+		
+		
 		if(My_Attribute.pit_talk==1){  //底坑通话状态
-			if(My_Attribute.pit_talk_temp==0){
+			if(My_Attribute.pit_talk_old==0){
 				my_usart3_comm.Comm=TALL_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=remote_ip[3];
 				my_usart3_comm.Data[1]=Pit_Addr;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
 				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);
-			}else if(My_Attribute.pit_talk_temp<250){
-			  My_Attribute.pit_talk_temp++;
-			}else{
-			  My_Attribute.pit_talk_temp=250;
+			}
+			if(My_Attribute.pit_talk_temp>MAX_Time_Out){  //超时未接收
+				My_Attribute.pit_talk=0; My_Attribute.pit_talk_temp=0;
+			}
+			My_Attribute.pit_talk_temp++;
+		}
+		if(My_Attribute.pit_talk==0){
+		  if(My_Attribute.pit_talk_old==1){
+				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
+				my_usart3_comm.Data[0]=remote_ip[3];
+				my_usart3_comm.Data[1]=Pit_Addr;
+				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);			 
 			}
 		}
+		My_Attribute.pit_talk_old=My_Attribute.pit_talk;		
+		
 		if(My_Attribute.lif_talk==1){  //轿厢通话状态
-			if(My_Attribute.lif_talk_temp==0){
+			if(My_Attribute.lif_talk_old==0){
 				my_usart3_comm.Comm=TALL_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=remote_ip[3];
 				my_usart3_comm.Data[1]=Lift_Addr;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
 				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);
-			}else if(My_Attribute.lif_talk_temp<250){
-			  My_Attribute.lif_talk_temp++;
-			}else{
-			  My_Attribute.lif_talk_temp=250;
+			}
+			if(My_Attribute.lif_talk_temp>MAX_Time_Out){//超时未接收
+			  My_Attribute.lif_talk=0; My_Attribute.lif_talk_temp=0;
+			}
+			My_Attribute.lif_talk_temp++;
+		}
+		if(My_Attribute.lif_talk==0){
+		  if(My_Attribute.lif_talk_old==1){
+				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
+				my_usart3_comm.Data[0]=remote_ip[3];
+				my_usart3_comm.Data[1]=Lift_Addr;
+				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
+				usart3_send_comm(&my_usart3_comm);  rt_thread_delay(100);			 
 			}
 		}		
+		My_Attribute.lif_talk_old=My_Attribute.lif_talk;	
+		
 		rt_thread_delay(200);		
 	}
 }
@@ -272,14 +319,15 @@ static  void  remote_msg_handle(struct Net_Port_Msg * msg)
 				my_usart3_comm.Data[0]=msg->msg_buff[msg->msg_output].client_ip[3];
 				my_usart3_comm.Data[1]=msg->msg_buff[msg->msg_output].msg_from;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
-				usart3_send_comm(&my_usart3_comm);				
+				usart3_send_comm(&my_usart3_comm);	
+        My_Attribute.car_talk=0;  My_Attribute.car_talk_temp=0;				
 			}else if(msg->msg_buff[msg->msg_output].msg_from==Pit_Addr){  //底坑挂机信号
 				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=msg->msg_buff[msg->msg_output].client_ip[3];
 				my_usart3_comm.Data[1]=msg->msg_buff[msg->msg_output].msg_from;
 				my_usart3_comm.Data[2]=0x00; my_usart3_comm.Data[3]=0x00;
 				usart3_send_comm(&my_usart3_comm);
-        				
+        My_Attribute.pit_talk=0;  My_Attribute.pit_talk_temp=0;				
 			}else if(msg->msg_buff[msg->msg_output].msg_from==Lift_Addr){  //轿厢挂机信号
 				my_usart3_comm.Comm=TAKE_DOWN_STAT;   	my_usart3_comm.DatLen=0x04;
 				my_usart3_comm.Data[0]=msg->msg_buff[msg->msg_output].client_ip[3];
